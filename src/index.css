@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Helvetica Neue", Arial, system-ui, sans-serif;
+  
+  /* Ocean Night Theme Colors */
+  --color-brand: #00D2FF;
+  --color-brand-hover: #00B4DB;
+  --color-surface: #1E293B;
+  --color-background: #0F172A;
+  --color-text-primary: #F8FAFC;
+  --color-text-secondary: #94A3B8;
+  --color-divider: #334155;
+  --color-hover: #2D3748;
+  
+  --shadow-sleek: 0 4px 6px -1px rgba(0, 0, 0, 0.2), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+}
+
+@layer base {
+  body {
+    @apply bg-background text-text-primary;
+    font-family: var(--font-sans);
+  }
+}
+
+@layer utilities {
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #334155;
+    border-radius: 10px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #475569;
+  }
+  .scrollbar-none::-webkit-scrollbar {
+    display: none;
+  }
+}

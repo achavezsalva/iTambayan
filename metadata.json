@@ -1,0 +1,6 @@
+{
+  "name": "iTambayan",
+  "description": "A world-class social networking platform for connection, sharing, and real-time interaction.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
